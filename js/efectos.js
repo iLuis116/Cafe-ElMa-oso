@@ -10,3 +10,14 @@ $(document).ready(function(){
 		}, 1500 + (index * 500));
 	});
 
+    if( $(window).width() > 800 ){
+		$('header .textos').css({
+			opacity: 0,
+			marginTop: 0
+		});
+
+		$('header .textos').animate({
+			opacity: 1,
+			marginTop: '-52px'
+		}, 1500);
+	}
